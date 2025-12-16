@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Colors (optional) */
+:root {
+  --color-green: #0f5132;
+  --color-red: #d9534f;
+  --color-white: #ffffff;
+}
