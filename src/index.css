@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the tree and lights */
+.tree-wrapper {
+  width: 260px;
+  height: 320px;
+}
+.tree-trunk {
+  width: 36px;
+  height: 48px;
+  background-color: #7a4b2a;
+  border-radius: 4px;
+}
+
+svg .light {
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.15));
+}
+
+/* small helper for focus outlines */
+.btn-focus:focus {
+  box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
+  outline: none;
+}
