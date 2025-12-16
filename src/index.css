@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom small utilities for the tree and placeholders */
+.tree-ornament {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.product-placeholder {
+  background: linear-gradient(135deg, rgba(15,157,88,0.08), rgba(211,47,47,0.06));
+  border-radius: 8px;
+}
+
+/* Make sure the tree is crisp on mobile and floats */
+.tree-wrapper {
+  will-change: transform;
+}
+
+/* Accessibility: reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-blink-fast, .animate-float-slow {
+    animation: none !important;
+  }
+}
